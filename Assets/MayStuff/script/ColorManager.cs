@@ -9,10 +9,11 @@ public class ColorManager : MonoBehaviour
     // This is private, so that we can show an error if its not set up yet
     public snowColor playerColor;
     [SerializeField] Image ColorImage;
+    public Color pColor;
 
     //public static GameManager Instance
-     
-        
+
+
     //{
     //    get
     //    {
@@ -31,18 +32,35 @@ public class ColorManager : MonoBehaviour
     //    // Set the static instance to this instance
     //    staticInstance = this;
     //}
-
+    void Start()
+    {
+        playerColor = snowColor.white;
+    }
     void Update()
     {
         switch (playerColor)
         {
             case snowColor.white:
-                ColorImage.color = Color.white;
+                pColor = Color.white;
                 break;
             case snowColor.yellow:
-                ColorImage.color = Color.yellow;
+                pColor = Color.yellow;
+                break;
+            case snowColor.green:
+                pColor = Color.green;
+                break;
+            case snowColor.purple:
+                pColor = Color.magenta;
+                break;
+            case snowColor.red:
+                pColor = Color.red;
                 break;
         }
+
+        ColorImage.color = pColor;
+
+
+
     }
 
 

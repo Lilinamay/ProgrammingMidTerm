@@ -10,14 +10,17 @@ public class playerShoot : MonoBehaviour
 {
     [SerializeField] LayerMask aimColliderMask = new LayerMask();
 
-    [SerializeField] Transform pfSnow;
+    //[SerializeField] Transform pfSnow;
+    [SerializeField] GameObject mySnow;
     [SerializeField] Transform spawnSnowPos;
     [SerializeField] GameObject gameManager;
     [SerializeField] TMP_Text snowText;
+    
     public GameObject testObject;
     snowManager snowManager;
+    ColorManager colorManager;
     Vector3 originalPos;
-    public float maxTime =5.0f; // Time taken to lerp
+    public float maxTime = 5.0f; // Time taken to lerp
 
     public float curTime = 100f;
 
@@ -31,6 +34,7 @@ public class playerShoot : MonoBehaviour
     {
         starterAssetsInputs = GetComponent<StarterAssetsInputs>();
         snowManager = gameManager.GetComponent<snowManager>();
+        colorManager = gameManager.GetComponent<ColorManager>();
     }
 
     // Update is called once per frame
@@ -39,8 +43,8 @@ public class playerShoot : MonoBehaviour
 
         //if (Time.timeSinceLevelLoad >= 8f)
         //{
-            this.gameObject.GetComponent<ThirdPersonController>().LockCameraPosition = false;
-       //}
+        this.gameObject.GetComponent<ThirdPersonController>().LockCameraPosition = false;
+        //}
 
         snowText.text = "Snowball: " + snowCount;
         Vector3 mouseWorldPosition = Vector3.zero;
@@ -59,8 +63,9 @@ public class playerShoot : MonoBehaviour
                 if (snowCount > 0)
                 {
                     Vector3 aimDir = (mouseWorldPosition - spawnSnowPos.position).normalized;
-                    Instantiate(pfSnow, spawnSnowPos.position, Quaternion.LookRotation(aimDir, Vector3.forward));
-
+                    //Instantiate(pfSnow, spawnSnowPos.position, Quaternion.LookRotation(aimDir, Vector3.forward));
+                    GameObject mysnow = Instantiate(mySnow, spawnSnowPos.position, Quaternion.LookRotation(aimDir, Vector3.forward));
+                    mysnow.GetComponent<snowball>().myColor = colorManager.pColor;
                     snowCount--;
                     starterAssetsInputs.shoot = false;
                 }
@@ -94,11 +99,11 @@ public class playerShoot : MonoBehaviour
             //if (Input.GetKeyDown(KeyCode.Space))
             //{
             if (!snowManager.go)
-                {
-                    originalPos = transform.position;
-                    curTime = 0;
-                    snowManager.go = true;
-                }
+            {
+                originalPos = transform.position;
+                curTime = 0;
+                snowManager.go = true;
+            }
 
             //}
         }
@@ -118,10 +123,11 @@ public class playerShoot : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "chuck")
+        if (other.tag == "chuck")
         {
             snowCount += 3;
             Destroy(other.gameObject);
         }
     }
 }
+

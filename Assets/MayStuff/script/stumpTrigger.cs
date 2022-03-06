@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class stumpTrigger : MonoBehaviour
 {
-    [SerializeField] GameObject gameManager;
-    
-    
+    [SerializeField] snowManager snowManager;
+    [SerializeField] snowColor myColor;
+    [SerializeField] ColorManager colorManager;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,9 +24,12 @@ public class stumpTrigger : MonoBehaviour
     {
         if(other.tag == "snow")
         {
-            gameManager.GetComponent<snowManager>().hitStump = true;
-            gameManager.GetComponent<snowManager>().startTimer = true;
-            gameManager.GetComponent<snowManager>().stump = gameObject;
+            if (colorManager.playerColor == myColor)
+            {
+                snowManager.hitStump = true;
+                snowManager.startTimer = true;
+                snowManager.stump = gameObject;
+            }
         }
     }
 }

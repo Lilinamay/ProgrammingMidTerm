@@ -8,11 +8,13 @@ public class snowball : MonoBehaviour
     private Rigidbody snowbody;
     Cinemachine.CinemachineImpulseSource source;
     Renderer render;
-    [SerializeField] Image ColorImage;
+    //
+    public Color myColor;
 
     //[SerializeField] GameObject gameManager;
     //playerShoot playershoot;
     // Start is called before the first frame update
+    //
     private void Awake()
     {
         snowbody = GetComponent<Rigidbody>();
@@ -31,8 +33,8 @@ public class snowball : MonoBehaviour
     void Update()
     {
         //snowbody.AddForce(transform.forward * (100 * Random.Range(1.3f, 1.7f)), ForceMode.Impulse);
-        source.GenerateImpulse(Camera.main.transform.forward);
-        render.material.color = ColorImage.color;
+        //source.GenerateImpulse(Camera.main.transform.forward);
+        render.material.color = myColor;
     }
 
     private void OnTriggerEnter(Collider other)

@@ -6,10 +6,11 @@ public class archTrigger : MonoBehaviour
 {
 
     [SerializeField] snowColor myColor;
+    [SerializeField] ColorManager colorManager;
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
@@ -22,7 +23,7 @@ public class archTrigger : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            Debug.Log("is player!");
+            colorManager.playerColor = myColor;
         }
     }
 }
