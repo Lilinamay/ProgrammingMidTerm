@@ -11,6 +11,7 @@ public class test : MonoBehaviour
     public Vector3 target;
     public Vector3 pos;
     public Vector3 space;
+    private float spaceMultipler = 3;
     public float curTime;
     public GameObject gameManager;
     [SerializeField] TMP_Text KillText;
@@ -25,16 +26,16 @@ public class test : MonoBehaviour
     {
         KillText.text = "killed " + kill + " / 10 dummies";
         curTime = Mathf.Clamp(curTime + Time.deltaTime, 0.0f, 0.3f);
-        transform.position = Vector3.Lerp(pos, target-space, curTime/0.3f);
+        transform.position = Vector3.Lerp(pos, target-space*spaceMultipler, curTime/0.3f);
 
         if (curTime >= 0.3f)
         {
-            Debug.Log(gameManager.GetComponent<snowManager>().enemy.transform.parent.gameObject);
-            if (gameManager.GetComponent<snowManager>().enemy.transform.parent.gameObject != null)
+            //Debug.Log(gameManager.GetComponent<snowManager>().stump.transform.gameObject);
+            if (gameManager.GetComponent<snowManager>().stump.transform.gameObject != null)
             {
                 kill++;
                 KillText.text = "killed " + kill + " / 10 dummies";
-                Destroy(gameManager.GetComponent<snowManager>().enemy.transform.parent.gameObject, 0.1f);
+                //Destroy(gameManager.GetComponent<snowManager>().stump.transform.gameObject, 0.1f);
             }
             enabled = false;
             

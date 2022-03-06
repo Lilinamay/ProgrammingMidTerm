@@ -37,10 +37,10 @@ public class playerShoot : MonoBehaviour
     void Update()
     {
 
-        if (Time.timeSinceLevelLoad >= 8f)
-        {
+        //if (Time.timeSinceLevelLoad >= 8f)
+        //{
             this.gameObject.GetComponent<ThirdPersonController>().LockCameraPosition = false;
-        }
+       //}
 
         snowText.text = "Snowball: " + snowCount;
         Vector3 mouseWorldPosition = Vector3.zero;
@@ -78,19 +78,17 @@ public class playerShoot : MonoBehaviour
 
     void moveToEnemy()
     {
-        if (snowManager.hitEnemy)
+        if (snowManager.hitStump)
         {
 
-            GetComponent<test>().space = (snowManager.enemy.transform.position - transform.position).normalized;
-
-            GetComponent<test>().target = snowManager.enemy.transform.position;
+            GetComponent<test>().space = (snowManager.stump.transform.position - transform.position).normalized; //normalize the space between the player and stump,use it to land before the stump
+            GetComponent<test>().target = snowManager.stump.transform.position;
             GetComponent<test>().pos = transform.position;
             GetComponent<test>().enabled = true;
-            Debug.Log(snowManager.enemy.transform.position);
-
+            Debug.Log(snowManager.stump.transform.position);
             snowManager.img1.enabled = false;
             snowManager.img2.enabled = false;
-            snowManager.hitEnemy = false;
+            snowManager.hitStump = false;
             //if (Input.GetKeyDown(KeyCode.Space))
             //{
             if (!snowManager.go)
@@ -106,16 +104,10 @@ public class playerShoot : MonoBehaviour
 
     void moveFunction()
     {
-        if (snowManager.enemy != null && curTime < maxTime) {
-            //Debug.Log("dash");
-            
-            //testObject.transform.position = Vector3.Lerp(originalPos, snowManager.enemy.transform.position-space, curTime / maxTime);
-            //testObject.transform.position = Vector3.Lerp(snowManager.enemy.transform.position , originalPos + space, curTime / maxTime);
-            //testObject.transform.position = Vector3.Lerp(originalPos, transform.position, curTime / maxTime);
-            //Debug.Log(snowManager.enemy.transform.position);
+        //if (snowManager.stump != null && curTime < maxTime) {
 
-        }
-        if (snowManager.enemy != null && curTime >= maxTime)
+        //}
+        if (snowManager.stump != null && curTime >= maxTime)
         {
             snowManager.go = false;
         }

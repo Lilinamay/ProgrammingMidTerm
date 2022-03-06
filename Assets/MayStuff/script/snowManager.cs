@@ -4,12 +4,12 @@ using UnityEngine;
 using UnityEngine.UI;
 public class snowManager : MonoBehaviour
 {
-    public bool hitEnemy = false;
+    public bool hitStump = false;
     public bool startTimer = false;
     public bool go = false;
     public float Timer;
     public float maxTime = 5f;
-    public GameObject enemy;
+    public GameObject stump;
     public GameObject player;
     public Image img1;
     public Image img2;
@@ -38,11 +38,11 @@ public class snowManager : MonoBehaviour
         //}
         else if (Timer <= 0)
         {
-            hitEnemy = false;
+            hitStump = false;
             go = false;
         }
 
-        if  (hitEnemy)
+        if  (hitStump)
         {
             img1.enabled = true;
             img2.enabled = true;

@@ -31,14 +31,15 @@ public class snowball : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "enemy")
-        {
-            //gameManager.GetComponent<snowManager>().hitEnemy = true;
-            Destroy(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+        //if (other.tag == "enemy")
+        //{
+        //    //gameManager.GetComponent<snowManager>().hitEnemy = true;
+        //    Destroy(gameObject);
+        //}
+        //else
+        //{
+        //    Destroy(gameObject);
+        //}
+        Destroy(gameObject);
     }
 }

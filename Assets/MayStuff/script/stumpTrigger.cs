@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class enemyTrigger : MonoBehaviour
+public class stumpTrigger : MonoBehaviour
 {
     [SerializeField] GameObject gameManager;
     
@@ -23,9 +23,9 @@ public class enemyTrigger : MonoBehaviour
     {
         if(other.tag == "snow")
         {
-            gameManager.GetComponent<snowManager>().hitEnemy = true;
+            gameManager.GetComponent<snowManager>().hitStump = true;
             gameManager.GetComponent<snowManager>().startTimer = true;
-            gameManager.GetComponent<snowManager>().enemy = gameObject;
+            gameManager.GetComponent<snowManager>().stump = gameObject;
         }
     }
 }

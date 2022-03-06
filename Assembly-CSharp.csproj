@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>8.0</LangVersion>
+    <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -53,12 +53,8 @@
     <UnityVersion>2020.3.17f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Assets/MayStuff/script/GameManager.cs" />
-    <Compile Include="Assets/MayStuff/homeScript/iceCold.cs" />
-    <Compile Include="Assets/MayStuff/homeScript/playerShoot.cs" />
+    <Compile Include="Assets/MayStuff/script/playerShoot.cs" />
     <Compile Include="Assets/StarterAssets/Mobile/Scripts/VirtualInputs/UIVirtualJoystick.cs" />
     <Compile Include="Assets/StarterAssets/Mobile/Scripts/VirtualInputs/UIVirtualTouchZone.cs" />
     <Compile Include="Assets/MayStuff/script/fog.cs" />
@@ -68,9 +64,9 @@
     <Compile Include="Assets/MayStuff/script/pickUpSnow.cs" />
     <Compile Include="Assets/StarterAssets/ThirdPersonController/Scripts/BasicRigidBodyPush.cs" />
     <Compile Include="Assets/StarterAssets/TutorialInfo/Scripts/Readme.cs" />
-    <Compile Include="Assets/MayStuff/homeScript/snowball.cs" />
-    <Compile Include="Assets/MayStuff/script/enemyTrigger.cs" />
-    <Compile Include="Assets/MayStuff/homeScript/test.cs" />
+    <Compile Include="Assets/MayStuff/script/snowball.cs" />
+    <Compile Include="Assets/MayStuff/script/stumpTrigger.cs" />
+    <Compile Include="Assets/MayStuff/script/test.cs" />
     <Compile Include="Assets/StarterAssets/Mobile/Scripts/CanvasInputs/UICanvasControllerInput.cs" />
     <Compile Include="Assets/MayStuff/script/fire.cs" />
     <Compile Include="Assets/StarterAssets/Mobile/Scripts/Utilities/MobileDisableAutoSwitchControls.cs" />
