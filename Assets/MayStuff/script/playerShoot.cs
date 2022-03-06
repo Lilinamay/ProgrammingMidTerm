@@ -60,6 +60,7 @@ public class playerShoot : MonoBehaviour
                 {
                     Vector3 aimDir = (mouseWorldPosition - spawnSnowPos.position).normalized;
                     Instantiate(pfSnow, spawnSnowPos.position, Quaternion.LookRotation(aimDir, Vector3.forward));
+
                     snowCount--;
                     starterAssetsInputs.shoot = false;
                 }
@@ -81,7 +82,8 @@ public class playerShoot : MonoBehaviour
         if (snowManager.hitStump)
         {
 
-            GetComponent<test>().space = (snowManager.stump.transform.position - transform.position).normalized; //normalize the space between the player and stump,use it to land before the stump
+            GetComponent<test>().space = (snowManager.stump.transform.position - transform.position).normalized;
+            //normalize the space between the player and stump,use it to land before the stump
             GetComponent<test>().target = snowManager.stump.transform.position;
             GetComponent<test>().pos = transform.position;
             GetComponent<test>().enabled = true;

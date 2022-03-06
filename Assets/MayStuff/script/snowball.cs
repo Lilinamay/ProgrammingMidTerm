@@ -1,18 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class snowball : MonoBehaviour
 {
     private Rigidbody snowbody;
     Cinemachine.CinemachineImpulseSource source;
+    Renderer render;
+    [SerializeField] Image ColorImage;
+
     //[SerializeField] GameObject gameManager;
     //playerShoot playershoot;
     // Start is called before the first frame update
     private void Awake()
     {
         snowbody = GetComponent<Rigidbody>();
-        source = GetComponent<Cinemachine.CinemachineImpulseSource>();
+        render= GetComponent<Renderer>();
+        //source = GetComponent<Cinemachine.CinemachineImpulseSource>();
         //playershoot = ;
     }
     void Start()
@@ -27,19 +32,15 @@ public class snowball : MonoBehaviour
     {
         //snowbody.AddForce(transform.forward * (100 * Random.Range(1.3f, 1.7f)), ForceMode.Impulse);
         source.GenerateImpulse(Camera.main.transform.forward);
+        render.material.color = ColorImage.color;
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        //if (other.tag == "enemy")
-        //{
-        //    //gameManager.GetComponent<snowManager>().hitEnemy = true;
-        //    Destroy(gameObject);
-        //}
-        //else
-        //{
-        //    Destroy(gameObject);
-        //}
-        Destroy(gameObject);
+        if (other.tag != "Player")
+        {
+
+            Destroy(gameObject);
+        }
     }
 }
