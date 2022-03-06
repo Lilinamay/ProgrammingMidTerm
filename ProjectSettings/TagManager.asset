@@ -9,6 +9,7 @@ TagManager:
   - snow
   - chuck
   - turret
+  - ignore
   layers:
   - Default
   - TransparentFX

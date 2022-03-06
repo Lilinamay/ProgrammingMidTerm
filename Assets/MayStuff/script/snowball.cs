@@ -24,7 +24,7 @@ public class snowball : MonoBehaviour
     }
     void Start()
     {
-        float speed = 20f;
+        float speed = 25f;
         snowbody.velocity = transform.forward * speed;
         
     }
@@ -39,7 +39,7 @@ public class snowball : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag != "Player")
+        if (other.tag != "Player" && other.tag != "ignore")
         {
 
             Destroy(gameObject);

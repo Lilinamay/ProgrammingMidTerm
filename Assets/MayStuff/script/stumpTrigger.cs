@@ -26,6 +26,7 @@ public class stumpTrigger : MonoBehaviour
         {
             if (colorManager.playerColor == myColor)
             {
+                Debug.Log("is my color!");
                 snowManager.hitStump = true;
                 snowManager.startTimer = true;
                 snowManager.stump = gameObject;
