@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class snowball : MonoBehaviour
 {
     private Rigidbody snowbody;
-    Cinemachine.CinemachineImpulseSource source;
+    //Cinemachine.CinemachineImpulseSource source;
     Renderer render;
     //
     public Color myColor;
@@ -17,6 +17,7 @@ public class snowball : MonoBehaviour
     //
     private void Awake()
     {
+        //gameObject.SetActive(false);
         snowbody = GetComponent<Rigidbody>();
         render= GetComponent<Renderer>();
         //source = GetComponent<Cinemachine.CinemachineImpulseSource>();
@@ -52,10 +53,12 @@ public class snowball : MonoBehaviour
         //    }
         //    Destroy(gameObject);
         //}
-        if (other.tag != "Player" && other.tag != "ignore" && other.tag != "snowbody")
+        if (other.tag != "Player" && other.tag != "ignore")
         {
-            Debug.Log("nooo");
+            //Debug.Log("nooo");
+            //gameObject.SetActive(false);
             Destroy(gameObject);
+            Audiomanager.Instance.PlaySound(Audiomanager.Instance.hit, Audiomanager.Instance.hitVolume);
         }
     }
 }

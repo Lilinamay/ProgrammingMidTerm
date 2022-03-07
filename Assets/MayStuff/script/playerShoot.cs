@@ -12,11 +12,13 @@ public class playerShoot : MonoBehaviour
 
     //[SerializeField] Transform pfSnow;
     [SerializeField] GameObject mySnow;
+    //public GameObject[] snowArray = new GameObject[10];
+    //int x = 0;
     [SerializeField] Transform spawnSnowPos;
     [SerializeField] GameObject gameManager;
     [SerializeField] TMP_Text snowText;
     
-    public GameObject testObject;
+    //public GameObject testObject;
     snowManager snowManager;
     ColorManager colorManager;
     //Vector3 originalPos;
@@ -32,6 +34,13 @@ public class playerShoot : MonoBehaviour
         starterAssetsInputs = GetComponent<StarterAssetsInputs>();
         snowManager = gameManager.GetComponent<snowManager>();
         colorManager = gameManager.GetComponent<ColorManager>();
+
+        //for (int i = 0; i < 10; i++)
+        //{
+        //    snowArray[i] = Instantiate(mySnow, transform.position, Quaternion.identity);
+        //    snowArray[i].SetActive(false);
+
+        //}
     }
 
     // Update is called once per frame
@@ -52,19 +61,32 @@ public class playerShoot : MonoBehaviour
             //DebugTransform.position = raycastHit.point;
             mouseWorldPosition = raycastHit.point;
         }
-
+        
+        //if (x >= 10)
+        //{
+        //    x = 0;
+        //}
         if (snowCount > 0)
         {
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {
-                if (snowCount > 0)
-                {
-                    Vector3 aimDir = (mouseWorldPosition - spawnSnowPos.position).normalized;
-                    //Instantiate(pfSnow, spawnSnowPos.position, Quaternion.LookRotation(aimDir, Vector3.forward));
-                    GameObject mysnow = Instantiate(mySnow, spawnSnowPos.position, Quaternion.LookRotation(aimDir, Vector3.forward));
-                    mysnow.GetComponent<snowball>().myColor = colorManager.pColor;
-                    snowCount--;
-                }
+                Audiomanager.Instance.PlaySound(Audiomanager.Instance.shoot, Audiomanager.Instance.shootVolume);
+                Vector3 aimDir = (mouseWorldPosition - spawnSnowPos.position).normalized;
+                //Instantiate(pfSnow, spawnSnowPos.position, Quaternion.LookRotation(aimDir, Vector3.forward));
+                GameObject mysnow = Instantiate(mySnow, spawnSnowPos.position, Quaternion.LookRotation(aimDir, Vector3.forward));
+                //if (x < 10)
+                //{
+                //    snowArray[x].SetActive(true);
+                //    snowArray[x].GetComponent<snowball>().myColor = colorManager.pColor;
+                //    snowArray[x].transform.position = spawnSnowPos.position;
+                //    snowArray[x].transform.rotation = Quaternion.LookRotation(aimDir, Vector3.forward);
+                //    Debug.Log(snowArray[x].transform.rotation);
+                //    x++;
+                //}
+                
+                mysnow.GetComponent<snowball>().myColor = colorManager.pColor;
+                snowCount--;
+                
             }
         }
 
