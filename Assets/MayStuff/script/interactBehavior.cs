@@ -10,7 +10,7 @@ public class interactBehavior : MonoBehaviour
     //Renderer renderer1;
     //Renderer renderer2;
     //[SerializeField] Image aim;
-    
+    public bool triggered;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +29,7 @@ public class interactBehavior : MonoBehaviour
         {
             interactText.enabled = true;
             //aim.enabled = false;
+            triggered = true;
         }
     }
 
@@ -37,6 +38,7 @@ public class interactBehavior : MonoBehaviour
         if (other.tag == "Player")
         {
             interactText.enabled = false;
+            triggered = false;
         }
     }
 
