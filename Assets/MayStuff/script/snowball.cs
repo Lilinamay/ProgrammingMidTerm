@@ -39,7 +39,20 @@ public class snowball : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag != "Player" && other.tag != "ignore")
+        if(other.tag == "snowbody")
+        {
+            other.GetComponent<Renderer>().material.color = myColor;
+            if(myColor == Color.red)
+            {
+                Debug.Log("you got it");
+            }
+            else
+            {
+                Debug.Log("nope");
+            }
+            Destroy(gameObject);
+        }
+        else if (other.tag != "Player" && other.tag != "ignore")
         {
 
             Destroy(gameObject);

@@ -10,6 +10,7 @@ TagManager:
   - chuck
   - turret
   - ignore
+  - snowbody
   layers:
   - Default
   - TransparentFX
