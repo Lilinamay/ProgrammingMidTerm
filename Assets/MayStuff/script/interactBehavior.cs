@@ -6,15 +6,15 @@ using UnityEngine.UI;
 
 public class interactBehavior : MonoBehaviour
 {
-    [SerializeField] TMP_Text interactText;
-    //Renderer renderer1;
-    //Renderer renderer2;
+    //[SerializeField] TMP_Text interactText;
     //[SerializeField] Image aim;
     public bool triggered;
+    [SerializeField] Renderer render1;
+    [SerializeField] Renderer render2;
     // Start is called before the first frame update
     void Start()
     {
-        interactText.enabled = false;
+        //interactText.enabled = false;
     }
 
     // Update is called once per frame
@@ -27,9 +27,15 @@ public class interactBehavior : MonoBehaviour
     {
         if(other.tag == "Player")
         {
-            interactText.enabled = true;
+            //interactText.enabled = true;
             //aim.enabled = false;
             triggered = true;
+        }
+
+        if(other.tag == "snow")
+        {
+            render1.material.color = other.GetComponent<Renderer>().material.color;
+            render2.material.color = other.GetComponent<Renderer>().material.color;
         }
     }
 
@@ -37,7 +43,7 @@ public class interactBehavior : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            interactText.enabled = false;
+            //interactText.enabled = false;
             triggered = false;
         }
     }

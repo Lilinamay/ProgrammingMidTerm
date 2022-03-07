@@ -15,7 +15,7 @@ public class test : MonoBehaviour
     public float curTime;
     public GameObject gameManager;
     
-    float maxtime = 2;
+    float maxtime = 1F;
     //public GameObject testobj;
     void Start()
     {

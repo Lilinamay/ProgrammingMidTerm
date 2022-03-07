@@ -19,10 +19,7 @@ public class playerShoot : MonoBehaviour
     public GameObject testObject;
     snowManager snowManager;
     ColorManager colorManager;
-    Vector3 originalPos;
-    public float maxTime = 5.0f; // Time taken to lerp
-
-    public float curTime = 100f;
+    //Vector3 originalPos;
 
     public int snowCount = 0;
 
@@ -58,7 +55,7 @@ public class playerShoot : MonoBehaviour
 
         if (snowCount > 0)
         {
-            if (starterAssetsInputs.shoot)
+            if (Input.GetKeyDown(KeyCode.Mouse0))
             {
                 if (snowCount > 0)
                 {
@@ -67,7 +64,6 @@ public class playerShoot : MonoBehaviour
                     GameObject mysnow = Instantiate(mySnow, spawnSnowPos.position, Quaternion.LookRotation(aimDir, Vector3.forward));
                     mysnow.GetComponent<snowball>().myColor = colorManager.pColor;
                     snowCount--;
-                    starterAssetsInputs.shoot = false;
                 }
             }
         }
@@ -78,7 +74,6 @@ public class playerShoot : MonoBehaviour
             starterAssetsInputs.dash = false;
         }
 
-        moveFunction();
 
     }
 
@@ -98,23 +93,10 @@ public class playerShoot : MonoBehaviour
             snowManager.hitStump = false;
             if (!snowManager.go)
             {
-                originalPos = transform.position;
-                curTime = 0;
+                //originalPos = transform.position;
                 snowManager.go = true;
             }
 
-            //}
-        }
-    }
-
-    void moveFunction()
-    {
-        //if (snowManager.stump != null && curTime < maxTime) {
-
-        //}
-        if (snowManager.stump != null && curTime >= maxTime)
-        {
-            snowManager.go = false;
         }
     }
 

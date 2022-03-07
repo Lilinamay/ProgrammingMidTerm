@@ -22,12 +22,14 @@ public class dialogues : MonoBehaviour
     [SerializeField] Queue<string> sentences;
     [SerializeField] Queue<string> names; //a list of strings
     public int myPlotNum = 0;
+    [SerializeField] TMP_Text interactText;
 
     void Start()
     {
         names = new Queue<string>();
         sentences = new Queue<string>();
         textboxSprite.enabled = false; //disable without dialogue
+        interactText.enabled = false;
     }
 
     private void triggerConversation()
@@ -46,7 +48,7 @@ public class dialogues : MonoBehaviour
             }
 
             textboxSprite.enabled = true;
-
+            interactText.enabled = true;
             foreach (string name in dialogue.names)
             {
                 names.Enqueue(name);
@@ -60,6 +62,7 @@ public class dialogues : MonoBehaviour
     {
         Debug.Log("End conversation ");// + names.Peek());
         textboxSprite.enabled = false;
+        interactText.enabled = false;
         nameText.text = "";
         dialogueText.text = "";
         names.Clear();
@@ -99,6 +102,7 @@ public class dialogues : MonoBehaviour
                //go down list and put into a sprite/string
                
                 textboxSprite.enabled = true;   //show image
+                interactText.enabled = true;
                 nameText.text = name;
                 dialogueText.text = sentence;
                 StopAllCoroutines();
@@ -124,6 +128,7 @@ public class dialogues : MonoBehaviour
                 StartCoroutine(TypeSentence(sentence2));
 
                 textboxSprite.enabled = true;   //show image
+                interactText.enabled = true;
                 nameText.text = name2;
                 Debug.Log(sentence2);
             }
