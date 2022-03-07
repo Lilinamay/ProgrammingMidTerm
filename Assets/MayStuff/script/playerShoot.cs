@@ -96,8 +96,6 @@ public class playerShoot : MonoBehaviour
             snowManager.img1.enabled = false;
             snowManager.img2.enabled = false;
             snowManager.hitStump = false;
-            //if (Input.GetKeyDown(KeyCode.Space))
-            //{
             if (!snowManager.go)
             {
                 originalPos = transform.position;

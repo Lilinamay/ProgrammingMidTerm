@@ -24,7 +24,7 @@ public class snowball : MonoBehaviour
     }
     void Start()
     {
-        float speed = 25f;
+        float speed = 35f;
         snowbody.velocity = transform.forward * speed;
         
     }
