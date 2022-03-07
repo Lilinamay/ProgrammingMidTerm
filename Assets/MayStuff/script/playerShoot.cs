@@ -95,6 +95,11 @@ public class playerShoot : MonoBehaviour
             moveToEnemy();
             starterAssetsInputs.dash = false;
         }
+        if (starterAssetsInputs.jump)
+        {
+            Audiomanager.Instance.PlaySound(Audiomanager.Instance.jump, Audiomanager.Instance.jumpVolume);
+            starterAssetsInputs.jump = false;
+        }
 
 
     }
@@ -103,7 +108,7 @@ public class playerShoot : MonoBehaviour
     {
         if (snowManager.hitStump)
         {
-
+            Audiomanager.Instance.PlaySound(Audiomanager.Instance.dash, Audiomanager.Instance.dashVolume);
             GetComponent<test>().space = (snowManager.stump.transform.position - transform.position).normalized;
             //normalize the space between the player and stump,use it to land before the stump
             GetComponent<test>().target = snowManager.stump.transform.position;
@@ -128,6 +133,7 @@ public class playerShoot : MonoBehaviour
         if (other.tag == "chuck")
         {
             snowCount += 3;
+            Audiomanager.Instance.PlaySound(Audiomanager.Instance.getsnow, Audiomanager.Instance.getsnowVolume);
             Destroy(other.gameObject);
         }
     }

@@ -54,7 +54,7 @@ namespace StarterAssets
 			SprintInput(value.isPressed);
 		}
 
-		public void OnDash(InputValue value)
+		public void OnDash(InputValue value)			//add dash key(right click)
 		{
 			DashInput(value.isPressed);
 		}

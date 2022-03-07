@@ -24,6 +24,7 @@ public class archTrigger : MonoBehaviour
         if (other.tag == "Player")
         {
             colorManager.playerColor = myColor;
+            Audiomanager.Instance.PlaySound(Audiomanager.Instance.arch, Audiomanager.Instance.archVolume);
         }
     }
 }

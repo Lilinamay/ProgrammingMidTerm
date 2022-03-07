@@ -141,6 +141,7 @@ public class dialogues : MonoBehaviour
         foreach (char letter in sentence.ToCharArray())
         {
             dialogueText.text += letter;
+            Audiomanager.Instance.PlaySound(Audiomanager.Instance.text, Audiomanager.Instance.textVolume);
             yield return null;
         }
     }

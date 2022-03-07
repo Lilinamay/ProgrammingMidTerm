@@ -15,18 +15,16 @@ public class Audiomanager : MonoBehaviour
 
     public AudioClip arch;
     [Range(0f, 1f)] public float archVolume = 1.0f;
-    public AudioClip chargeAttackSound;
-    [Range(0f, 1f)] public float chargeAttackVolume = 1.0f;
-    public AudioClip hitEnemySound;
-    [Range(0f, 1f)] public float hitEnemyVolume = 1.0f;
-    public AudioClip gainHealthSound;
-    [Range(0f, 1f)] public float gainHealthVolume = 1.0f;
-    public AudioClip playerTakeDamageSound;
-    [Range(0f, 1f)] public float playerTakeDamageVolume = 1.0f;
+    public AudioClip dash;
+    [Range(0f, 1f)] public float dashVolume = 1.0f;
+    public AudioClip jump;
+    [Range(0f, 1f)] public float jumpVolume = 1.0f;
+    public AudioClip text;
+    [Range(0f, 1f)] public float textVolume = 1.0f;
+    public AudioClip getsnow;
+    [Range(0f, 1f)] public float getsnowVolume = 1.0f;
     public AudioClip optionSound;
     [Range(0f, 1f)] public float optionVolume = 1.0f;
-    public AudioClip dashSound;
-    [Range(0f, 1f)] public float dashVolume = 1.0f;
     public AudioClip spikeSound;
     [Range(0f, 1f)] public float spikeVolume = 1.0f;
     public AudioClip footstepSound;
