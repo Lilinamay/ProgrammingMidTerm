@@ -6,7 +6,7 @@ public class Audiomanager : MonoBehaviour
 {
     public static Audiomanager Instance;
     public GameObject SoundPrefab;
-
+    //play following sound in the sound prefab
     public AudioClip shoot;
     [Range(0f, 1f)] public float shootVolume = 1.0f;
     public AudioClip hit;   //snowball hit surfaces

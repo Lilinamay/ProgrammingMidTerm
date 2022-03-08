@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+//manage player current color settings
 public enum snowColor { purple, red, green, yellow, white};
 public class ColorManager : MonoBehaviour
 {
-    // This is private, so that we can show an error if its not set up yet
-    public snowColor playerColor;
-    [SerializeField] Image ColorImage;
+    
+    public snowColor playerColor;   
+    [SerializeField] Image ColorImage;      //show player my color
     public Color pColor;
 
     void Start()
@@ -17,7 +17,7 @@ public class ColorManager : MonoBehaviour
     }
     void Update()
     {
-        switch (playerColor)
+        switch (playerColor)            //set color to its states
         {
             case snowColor.white:
                 pColor = Color.white;

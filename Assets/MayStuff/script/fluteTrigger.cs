@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class fluteTrigger : MonoBehaviour
 {
+    //trigger play flute
     public bool playflute = false;
     // Start is called before the first frame update
     void Start()
@@ -19,7 +20,7 @@ public class fluteTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "Player")      //if enter, trigger play flute
         {
             playflute = true;
         }
@@ -27,7 +28,7 @@ public class fluteTrigger : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "Player")      //Exit, set to false
         {
             playflute = false;
         }

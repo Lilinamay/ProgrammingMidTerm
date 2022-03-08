@@ -17,21 +17,16 @@ public class fluteControl : MonoBehaviour
      float normalMaxVol = 1;        //set normal to 1
      float normalAttackTime = 1;
 
-    public float FmaxVolume = 1;    //valume accessable to flute manager
+    public float FmaxVolume = 1;    //volume accessable to flute manager
     public float FattackTime = 1;
     public float FreleaseTime = 1;
 
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
 
     // Update is called once per frame
     void Update()
     {
-        if (snowmanR.material.color == Color.white)
+        if (snowmanR.material.color == Color.white)     //if color white, switch to normal snapshot in audiomixer, set the volumes and times 
         {
             normal.TransitionTo(0);
             Debug.Log("normal");
@@ -40,7 +35,7 @@ public class fluteControl : MonoBehaviour
             FreleaseTime = 0.5f;
 
         }
-        if (snowmanR.material.color == Color.yellow)
+        if (snowmanR.material.color == Color.yellow)    //if color yellow, .....
         {
             reverb.TransitionTo(0);
             Debug.Log("reverb");
