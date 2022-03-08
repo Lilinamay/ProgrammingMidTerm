@@ -20,6 +20,8 @@ public class fluteControl : MonoBehaviour
     public float FmaxVolume = 1;
     public float FattackTime = 1;
     public float FreleaseTime = 1;
+
+
     // Start is called before the first frame update
     void Start()
     {

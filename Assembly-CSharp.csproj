@@ -78,6 +78,7 @@
     <Compile Include="Assets/MayStuff/script/snowManager.cs" />
     <Compile Include="Assets/MayStuff/script/fluteControl.cs" />
     <Compile Include="Assets/MayStuff/script/fluteSystem.cs" />
+    <Compile Include="Assets/MayStuff/script/otherDialogues.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />

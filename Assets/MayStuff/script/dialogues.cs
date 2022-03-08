@@ -14,7 +14,6 @@ public class dialogues : MonoBehaviour
     [SerializeField] Image textboxSprite;
     private bool haveTriggered = false;
     private bool triggered = false;
-    private bool first = false;
     public bool dialogueComplete = false;
     [SerializeField] GameObject player;
     [SerializeField] GameObject wall;
@@ -60,7 +59,7 @@ public class dialogues : MonoBehaviour
 
     void EndDialogue()
     {
-        if (myPlotNum == 2 && triggered)
+        if (myPlotNum == 2 && triggered && wall != null)
         {
             wall.SetActive(false);
         }
@@ -74,7 +73,7 @@ public class dialogues : MonoBehaviour
         haveTriggered = false;
         GetComponent<interactBehavior>().triggered = false;
         //dialogue2Complete = true;
-        first = false;
+
         triggered = false;
 
 
@@ -87,8 +86,8 @@ public class dialogues : MonoBehaviour
         //{
         //    dialogue = mydialogues[plotNumber.Globals.plotNum];
         //}
-        dialogue = mydialogues[myPlotNum];
-        if (!GetComponent<interactBehavior>().triggered)
+        dialogue = mydialogues[myPlotNum];      //my current dialogue
+        if (!GetComponent<interactBehavior>().triggered && triggered)      //if leave conversation
         {
             StopAllCoroutines();
             EndDialogue();
