@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 public class textFade : MonoBehaviour
 {
+
     [SerializeField] TMP_Text title;
 
     [SerializeField] float speed;

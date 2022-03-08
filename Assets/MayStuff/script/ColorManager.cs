@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 //manage player current color settings
-public enum snowColor { purple, red, green, yellow, white};
+public enum snowColor { purple, red, green, yellow, white};     //all the color player can use
 public class ColorManager : MonoBehaviour
 {
     
