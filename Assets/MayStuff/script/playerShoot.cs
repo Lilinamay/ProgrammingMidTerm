@@ -28,10 +28,10 @@ public class playerShoot : MonoBehaviour
     void Update()
     {
 
-        //if (Time.timeSinceLevelLoad >= 8f)
-        //{
+        if (Time.timeSinceLevelLoad >= 2f)
+        {
         this.gameObject.GetComponent<ThirdPersonController>().LockCameraPosition = false;
-        //}
+        }
 
         snowText.text = "Snowball: " + snowCount;       //show snowcount
         Vector3 mouseWorldPosition = Vector3.zero;
@@ -60,7 +60,7 @@ public class playerShoot : MonoBehaviour
             moveToEnemy();
             starterAssetsInputs.dash = false;
         }
-        if (starterAssetsInputs.jump)
+        if (starterAssetsInputs.jump)  //if jump playsound
         {
             Audiomanager.Instance.PlaySound(Audiomanager.Instance.jump, Audiomanager.Instance.jumpVolume);
             starterAssetsInputs.jump = false;

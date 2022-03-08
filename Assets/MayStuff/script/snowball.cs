@@ -15,12 +15,14 @@ public class snowball : MonoBehaviour
     {
         snowbody = GetComponent<Rigidbody>();
         render= GetComponent<Renderer>();
+        render.material.color = myColor;
     }
     void Start()
     {
         float speed = 35f;
         snowbody.velocity = transform.forward * speed;      //movement
-        
+        render.material.color = myColor;
+
     }
 
     // Update is called once per frame

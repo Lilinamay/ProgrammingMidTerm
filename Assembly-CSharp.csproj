@@ -62,7 +62,6 @@
     <Compile Include="Assets/MayStuff/script/dialogues.cs" />
     <Compile Include="Assets/MayStuff/script/Audiomanager.cs" />
     <Compile Include="Assets/MayStuff/script/archTrigger.cs" />
-    <Compile Include="Assets/MayStuff/script/PlayerTrigger.cs" />
     <Compile Include="Assets/MayStuff/script/pickUpSnow.cs" />
     <Compile Include="Assets/MayStuff/script/plotNumChange.cs" />
     <Compile Include="Assets/StarterAssets/ThirdPersonController/Scripts/BasicRigidBodyPush.cs" />
@@ -78,8 +77,8 @@
     <Compile Include="Assets/MayStuff/script/snowManager.cs" />
     <Compile Include="Assets/MayStuff/script/fluteControl.cs" />
     <Compile Include="Assets/MayStuff/script/fluteSystem.cs" />
-    <Compile Include="Assets/MayStuff/script/otherDialogues.cs" />
     <Compile Include="Assets/MayStuff/script/fluteTrigger.cs" />
+    <Compile Include="Assets/MayStuff/script/textFade.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
