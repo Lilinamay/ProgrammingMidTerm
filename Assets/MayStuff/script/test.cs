@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-
+//get stats from playershoot to lerp player to the stump
 public class test : MonoBehaviour
 {
     public float x = 0;
@@ -11,36 +11,22 @@ public class test : MonoBehaviour
     public Vector3 target;
     public Vector3 pos;
     public Vector3 space;
-    private float spaceMultipler = 3;
+    private float spaceMultipler = 3;   //the space mutipler the player leave  between the stump
     public float curTime;
     public GameObject gameManager;
     
     float maxtime = 1F;
-    //public GameObject testobj;
-    void Start()
-    {
-        
-    }
-    //
-
-    // Update is called once per frame
+   
     void Update()
     {
-        //KillText.text = "killed " + kill + " / 10 dummies";
+
         curTime = Mathf.Clamp(curTime + Time.deltaTime, 0.0f, maxtime);
-        transform.position = Vector3.Lerp(pos, target-space*spaceMultipler, curTime/maxtime);
-        //Instantiate(testobj, transform.position, Quaternion.identity);
+        transform.position = Vector3.Lerp(pos, target-space*spaceMultipler, curTime/maxtime);  //lerp player to in front of stump  
+
         if (curTime >= maxtime)
         {
             //Debug.Log(gameManager.GetComponent<snowManager>().stump.transform.gameObject);
-            if (gameManager.GetComponent<snowManager>().stump.transform.gameObject != null)
-            {
-                //kill++;
-                //KillText.text = "killed " + kill + " / 10 dummies";
-                //Destroy(gameManager.GetComponent<snowManager>().stump.transform.gameObject, 0.1f);
-            }
             enabled = false;
-            
             curTime = 0;
         }
     }

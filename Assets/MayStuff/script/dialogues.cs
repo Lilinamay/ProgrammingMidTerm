@@ -60,7 +60,11 @@ public class dialogues : MonoBehaviour
 
     void EndDialogue()
     {
-        Debug.Log("End conversation ");// + names.Peek());
+        if (myPlotNum == 2 && triggered)
+        {
+            wall.SetActive(false);
+        }
+        //Debug.Log("End conversation ");// + names.Peek());
         textboxSprite.enabled = false;
         interactText.enabled = false;
         nameText.text = "";
@@ -73,10 +77,7 @@ public class dialogues : MonoBehaviour
         first = false;
         triggered = false;
 
-        if (myPlotNum == 2)
-        {
-            wall.SetActive(false);
-        }
+
     }
 
 

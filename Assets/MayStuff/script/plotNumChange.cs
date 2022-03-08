@@ -6,6 +6,7 @@ public class plotNumChange : MonoBehaviour
 {
     [SerializeField] Renderer render1;
     [SerializeField] Renderer render2;
+    [SerializeField] interactBehavior interactBehavior;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,9 +20,9 @@ public class plotNumChange : MonoBehaviour
         {
             GetComponent<dialogues>().myPlotNum = 2;
         }
-        if (render1.material.color == Color.red && render2.material.color == Color.red)
+        else if (interactBehavior.shot)
         {
-            GetComponent<dialogues>().myPlotNum = 2;
+            GetComponent<dialogues>().myPlotNum = 1;
         }
     }
 }

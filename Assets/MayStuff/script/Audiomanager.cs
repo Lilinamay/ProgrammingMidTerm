@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+// manage audios 
 public class Audiomanager : MonoBehaviour
 {
     public static Audiomanager Instance;
@@ -9,34 +9,21 @@ public class Audiomanager : MonoBehaviour
 
     public AudioClip shoot;
     [Range(0f, 1f)] public float shootVolume = 1.0f;
-    public AudioClip hit;
+    public AudioClip hit;   //snowball hit surfaces
     [Range(0f, 1f)] public float hitVolume = 1.0f;
     [Space(10)]
 
-    public AudioClip arch;
+    public AudioClip arch;  //when player enter arch
     [Range(0f, 1f)] public float archVolume = 1.0f;
     public AudioClip dash;
     [Range(0f, 1f)] public float dashVolume = 1.0f;
     public AudioClip jump;
     [Range(0f, 1f)] public float jumpVolume = 1.0f;
-    public AudioClip text;
+    public AudioClip text;  //during dialogue
     [Range(0f, 1f)] public float textVolume = 1.0f;
     public AudioClip getsnow;
     [Range(0f, 1f)] public float getsnowVolume = 1.0f;
-    public AudioClip optionSound;
-    [Range(0f, 1f)] public float optionVolume = 1.0f;
-    public AudioClip spikeSound;
-    [Range(0f, 1f)] public float spikeVolume = 1.0f;
-    public AudioClip footstepSound;
-    [Range(0f, 1f)] public float footstepVolume = 1.0f;
-    public AudioClip dialogSound;
-    [Range(0f, 1f)] public float dialogVolume = 1.0f;
-    [Space(10)]
 
-    public AudioClip enemyDashSound;
-    [Range(0f, 1f)] public float enemyDashVolume = 1.0f;
-    public AudioClip enemyChargeAttackSound;
-    [Range(0f, 1f)] public float enemyChargeAttackVolume = 1.0f;
 
 
     // Start is called before the first frame update
@@ -47,7 +34,7 @@ public class Audiomanager : MonoBehaviour
 
     private void Awake()
     {
-        if (Instance == null)
+        if (Instance == null)       //make sure it functions
         {
             Instance = this;
         }
@@ -64,21 +51,21 @@ public class Audiomanager : MonoBehaviour
 
     }
 
-    public void PlaySound(AudioClip clipToPlay, float volume = 0.5f)
+    public void PlaySound(AudioClip clipToPlay, float volume = 0.5f)        //public function to play sound when needed
     {
-        if (clipToPlay == null)
+        if (clipToPlay == null)         //if nothing to play
         {
             Debug.Log("AUDIO CLIP NOT ASSIGNED ON AUDIO DIRECTOR!");
             return;
         }
 
-        GameObject newSound = Instantiate(SoundPrefab, Vector3.zero, Quaternion.identity);
+        GameObject newSound = Instantiate(SoundPrefab, Vector3.zero, Quaternion.identity);  //create audiosource to play sound
         AudioSource newSoundSource = newSound.GetComponent<AudioSource>();
         newSoundSource.clip = clipToPlay;
         newSoundSource.volume = volume;
         //Debug.Log("volume" + volume);
         newSoundSource.Play();
-        Destroy(newSound, clipToPlay.length);
+        Destroy(newSound, clipToPlay.length);   //finish play sound delete
     }
 }
 

@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public class snowManager : MonoBehaviour
 {
+    //if snowball hit a stump the same color as the snowball, dashable, manage the conditions 
     public bool hitStump = false;
     public bool startTimer = false;
     public bool go = false;
@@ -11,7 +12,7 @@ public class snowManager : MonoBehaviour
     public float maxTime = 5f;
     public GameObject stump;
     public GameObject player;
-    public Image img1;
+    public Image img1;      //UI
     public Image img2;
     
     // Start is called before the first frame update
@@ -31,11 +32,6 @@ public class snowManager : MonoBehaviour
             Timer = maxTime;
             startTimer = false;
         }
-        //if (Timer > 0)
-        //{
-        //    hitEnemy = true;
-        //    Timer -= Time.deltaTime;
-        //}
         else if (Timer <= 0)
         {
             hitStump = false;
@@ -44,13 +40,9 @@ public class snowManager : MonoBehaviour
 
         if  (hitStump)
         {
-            img1.enabled = true;
+            img1.enabled = true;    //show UI if hit a stump
             img2.enabled = true;
         }
-        if (go)
-        {
-            //img1.enabled = false;
-            //img2.enabled = false;
-        }
+
     }
 }

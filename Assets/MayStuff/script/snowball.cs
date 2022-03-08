@@ -2,63 +2,40 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+//snowball behavior attached to the prefab snowball
 public class snowball : MonoBehaviour
 {
     private Rigidbody snowbody;
-    //Cinemachine.CinemachineImpulseSource source;
     Renderer render;
     //
-    public Color myColor;
+    public Color myColor;       //snowball color changable in other script
 
-    //[SerializeField] GameObject gameManager;
-    //playerShoot playershoot;
-    // Start is called before the first frame update
-    //
+
     private void Awake()
     {
-        //gameObject.SetActive(false);
         snowbody = GetComponent<Rigidbody>();
         render= GetComponent<Renderer>();
-        //source = GetComponent<Cinemachine.CinemachineImpulseSource>();
-        //playershoot = ;
     }
     void Start()
     {
         float speed = 35f;
-        snowbody.velocity = transform.forward * speed;
+        snowbody.velocity = transform.forward * speed;      //movement
         
     }
 
     // Update is called once per frame
     void Update()
     {
-        //snowbody.AddForce(transform.forward * (100 * Random.Range(1.3f, 1.7f)), ForceMode.Impulse);
-        //source.GenerateImpulse(Camera.main.transform.forward);
-        render.material.color = myColor;
+        render.material.color = myColor;        //color same as my color changable in other script
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        //if(other.tag == "snowbody")
-        //{
-        //    other.GetComponent<Renderer>().material.color = myColor;
-        //    if(myColor == Color.red)
-        //    {
-        //        Debug.Log("you got it");
-        //    }
-        //    else
-        //    {
-        //        Debug.Log("nope");
-        //    }
-        //    Destroy(gameObject);
-        //}
-        if (other.tag != "Player" && other.tag != "ignore")
+        if (other.tag != "Player" && other.tag != "ignore")     //if not player or things to ignore, hit anything, destroy itself
         {
-            //Debug.Log("nooo");
-            //gameObject.SetActive(false);
-            Destroy(gameObject);
             Audiomanager.Instance.PlaySound(Audiomanager.Instance.hit, Audiomanager.Instance.hitVolume);
+            Destroy(gameObject);
+           
         }
     }
 }
