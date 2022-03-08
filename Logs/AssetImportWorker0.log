@@ -2482,3 +2482,831 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.013742 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.59 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-03-08 00:17:49.257 Unity[67441:1726338] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x60000121ee60 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Mono: successfully reloaded assembly
+- Completed reload, in  3.669 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3672ms)
+		BeginReloadAssembly (445ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (56ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (152ms)
+		EndReloadAssembly (3108ms)
+			LoadAssemblies (358ms)
+			RebuildTransferFunctionScriptingTraits (1ms)
+			SetupTypeCache (388ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (54ms)
+			SetupLoadedEditorAssemblies (1993ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (18ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (304ms)
+				ProcessInitializeOnLoadAttributes (1637ms)
+				ProcessInitializeOnLoadMethodAttributes (29ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (41ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.67 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2203 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 238.7 MB.
+System memory in use after: 238.9 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2820.
+Total: 17.806958 ms (FindLiveObjects: 0.263250 ms CreateObjectMapping: 0.095583 ms MarkObjects: 17.229750 ms  DeleteObjects: 0.215375 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002307 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-03-08 00:19:05.462 Unity[67441:1726338] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x60000121f090 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Mono: successfully reloaded assembly
+- Completed reload, in  3.116 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3124ms)
+		BeginReloadAssembly (349ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (43ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (126ms)
+		EndReloadAssembly (2672ms)
+			LoadAssemblies (274ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (374ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (58ms)
+			SetupLoadedEditorAssemblies (1620ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (298ms)
+				ProcessInitializeOnLoadAttributes (1286ms)
+				ProcessInitializeOnLoadMethodAttributes (18ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (32ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.41 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2203 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 238.9 MB.
+System memory in use after: 239.1 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2822.
+Total: 3.936834 ms (FindLiveObjects: 0.185291 ms CreateObjectMapping: 0.046625 ms MarkObjects: 3.421791 ms  DeleteObjects: 0.282417 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005375 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 2.65 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-03-08 00:19:46.111 Unity[67441:1726338] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600001202f40 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Mono: successfully reloaded assembly
+- Completed reload, in  3.090 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3096ms)
+		BeginReloadAssembly (333ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (43ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (115ms)
+		EndReloadAssembly (2654ms)
+			LoadAssemblies (234ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (400ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (56ms)
+			SetupLoadedEditorAssemblies (1620ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (16ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (272ms)
+				ProcessInitializeOnLoadAttributes (1302ms)
+				ProcessInitializeOnLoadMethodAttributes (25ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (36ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.42 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2203 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 239.0 MB.
+System memory in use after: 239.2 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2824.
+Total: 2.687750 ms (FindLiveObjects: 0.170750 ms CreateObjectMapping: 0.095958 ms MarkObjects: 2.347208 ms  DeleteObjects: 0.072583 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 869.388583 seconds.
+  path: Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes
+  artifactKey: Guid(5aa6674a38fe34998b47d49fe3382131) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes using Guid(5aa6674a38fe34998b47d49fe3382131) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1f467b83f24f03508a132a7992de1c3') in 0.102284 seconds 
+  Import took 0.246510 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.783098 seconds.
+  path: Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Models
+  artifactKey: Guid(931507ac8a6d37246aff8f318459ea43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Models using Guid(931507ac8a6d37246aff8f318459ea43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '110cb1024046220aa026ea6039a475b4') in 0.001432 seconds 
+  Import took 0.006048 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.078905 seconds.
+  path: Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Models/Bush 1.fbx
+  artifactKey: Guid(bacdb87a78a3ca847a674df0ff9c059b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Models/Bush 1.fbx using Guid(bacdb87a78a3ca847a674df0ff9c059b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b916708250e97fca9975f1f17c546574') in 0.590638 seconds 
+  Import took 0.593566 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002147 seconds.
+  path: Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Models/Potted Plant 4.fbx
+  artifactKey: Guid(32bc2c9ae46370946a34ec06ac1e3d27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Models/Potted Plant 4.fbx using Guid(32bc2c9ae46370946a34ec06ac1e3d27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49802a93832c829f8dfa0f55360fc2ec') in 0.124300 seconds 
+  Import took 0.126802 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Models/Potted Plant 1.fbx
+  artifactKey: Guid(032c7dfa36cfb6443ac38433512bfc1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Models/Potted Plant 1.fbx using Guid(032c7dfa36cfb6443ac38433512bfc1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aff9b6fe91dba305501f9e64696f5a46') in 0.019588 seconds 
+  Import took 0.022067 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Models/Potted Plant 6.fbx
+  artifactKey: Guid(08cf17a8204eccd4981de2725be44dee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Models/Potted Plant 6.fbx using Guid(08cf17a8204eccd4981de2725be44dee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7852d91bcc22b591bd34e87d691ff6da') in 0.019417 seconds 
+  Import took 0.022092 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Models/Log 2.fbx
+  artifactKey: Guid(b24a735fa0b4d29438a0f63df2b8c483) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Models/Log 2.fbx using Guid(b24a735fa0b4d29438a0f63df2b8c483) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a85491ea26a74e98fafe9167ab39817') in 0.015322 seconds 
+  Import took 0.018034 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Models/Potted Plant 5.fbx
+  artifactKey: Guid(b58d7d85e23579e4f91d6393bef9cd19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Models/Potted Plant 5.fbx using Guid(b58d7d85e23579e4f91d6393bef9cd19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24885a570576dd84b8b65a0e88e02b04') in 0.020424 seconds 
+  Import took 0.022937 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Models/Hedge 2.fbx
+  artifactKey: Guid(e3a6f52526d23ab4fb6ef91b3b4853ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Models/Hedge 2.fbx using Guid(e3a6f52526d23ab4fb6ef91b3b4853ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cf35a09b538d8975276243f0ef62c16') in 0.014446 seconds 
+  Import took 0.017465 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Models/Street Tree 1.fbx
+  artifactKey: Guid(d3b48054d183a8b41a37b78316298e1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Models/Street Tree 1.fbx using Guid(d3b48054d183a8b41a37b78316298e1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed63cd6b92a3fb5b3306ec0f9848409c') in 0.016439 seconds 
+  Import took 0.019032 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Models/Bush 2.fbx
+  artifactKey: Guid(50d0bd369a0d09248bd24decd92c0453) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Models/Bush 2.fbx using Guid(50d0bd369a0d09248bd24decd92c0453) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd1d1755612de4a12b41235c50b97819') in 0.009983 seconds 
+  Import took 0.012547 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Models/Log 1.fbx
+  artifactKey: Guid(55df51f98c0b08f46b8eee7d9ca67422) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Models/Log 1.fbx using Guid(55df51f98c0b08f46b8eee7d9ca67422) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20bd07f8d90172ce9a2e61f1ccec6958') in 0.015350 seconds 
+  Import took 0.017888 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000350 seconds.
+  path: Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Models/Hedge 1.fbx
+  artifactKey: Guid(bffe474d70a5e7744b2deba0da94a235) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Models/Hedge 1.fbx using Guid(bffe474d70a5e7744b2deba0da94a235) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b665e4938581cd8d6dd7cc9b2fe9f67d') in 0.017335 seconds 
+  Import took 0.019955 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000242 seconds.
+  path: Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Models/Potted Plant 2.fbx
+  artifactKey: Guid(aab7f31e374a03d44923a155620b8f18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Models/Potted Plant 2.fbx using Guid(aab7f31e374a03d44923a155620b8f18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c13fa0e7adfcc054afeb9188505d79ab') in 0.015113 seconds 
+  Import took 0.017508 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Models/Potted Plant 3.fbx
+  artifactKey: Guid(733ad951b45dfea4fb236faf6699ad40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Models/Potted Plant 3.fbx using Guid(733ad951b45dfea4fb236faf6699ad40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1ddb9d5c8fcf3b6b6913cba057f66c8') in 0.015471 seconds 
+  Import took 0.017850 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.298285 seconds.
+  path: Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs
+  artifactKey: Guid(a6be8cac79645f241b6aee986e0d4b2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs using Guid(a6be8cac79645f241b6aee986e0d4b2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cc1d8d997fcd4f7493c215e5526176a') in 0.001002 seconds 
+  Import took 0.007890 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.074120 seconds.
+  path: Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/Background1.prefab
+  artifactKey: Guid(593794403c8dab2449e17db5068b1251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/Background1.prefab using Guid(593794403c8dab2449e17db5068b1251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '008f6693e824716bb1297dee9bf7343a') in 0.092876 seconds 
+  Import took 0.096203 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002726 seconds.
+  path: Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/Bush 2.prefab
+  artifactKey: Guid(9c90430fdda32824ab31504372faa134) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/Bush 2.prefab using Guid(9c90430fdda32824ab31504372faa134) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72f8077a8de76a4320219bd1769ec538') in 0.012874 seconds 
+  Import took 0.016748 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000315 seconds.
+  path: Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/Floor 2.prefab
+  artifactKey: Guid(6f46e1a4008d02f44b604a3be2a12441) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/Floor 2.prefab using Guid(6f46e1a4008d02f44b604a3be2a12441) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba9878ac9b6b7e6c43cf5101237b594e') in 0.009251 seconds 
+  Import took 0.013537 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000525 seconds.
+  path: Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/Potted Plant 1.prefab
+  artifactKey: Guid(9e76e5193c4966c42a1088f204b70e9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/Potted Plant 1.prefab using Guid(9e76e5193c4966c42a1088f204b70e9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f46025a655c8b39ba4bb09ac882ddf78') in 0.010286 seconds 
+  Import took 0.014818 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000331 seconds.
+  path: Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/Floor 1.prefab
+  artifactKey: Guid(06c4d1032830f694f9a3f388ae0b401e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/Floor 1.prefab using Guid(06c4d1032830f694f9a3f388ae0b401e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34cfccc389818c6dfe7f724c4fa8e506') in 0.008565 seconds 
+  Import took 0.011790 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000283 seconds.
+  path: Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/Bush 1.prefab
+  artifactKey: Guid(9c2e89039c24beb4a89d978db6c83c19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/Bush 1.prefab using Guid(9c2e89039c24beb4a89d978db6c83c19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58ff4301c6b218b8d5643bfe0e60e084') in 0.008967 seconds 
+  Import took 0.012082 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000351 seconds.
+  path: Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/Log 2.prefab
+  artifactKey: Guid(406ca595d3f7dc849b6d4fcebdc060e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/Log 2.prefab using Guid(406ca595d3f7dc849b6d4fcebdc060e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8505e15d7caf5f57fef20f521e6e19f') in 0.010253 seconds 
+  Import took 0.013121 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/Hedge 1.prefab
+  artifactKey: Guid(e1ad4dab8b77e5e4cb90b7caec4532ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/Hedge 1.prefab using Guid(e1ad4dab8b77e5e4cb90b7caec4532ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50b0c1fb2cdd42bb9f12e6ae16eacb6d') in 0.008365 seconds 
+  Import took 0.010895 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002583 seconds.
+  path: Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/Log 1.prefab
+  artifactKey: Guid(4d905b5f2664cf64b9a4c072f1b286f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/Log 1.prefab using Guid(4d905b5f2664cf64b9a4c072f1b286f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36266b4532bf8e5c09e24a43506f0c0f') in 0.007748 seconds 
+  Import took 0.010463 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/Background2.prefab
+  artifactKey: Guid(b79bb06b38877774f9676af4d52e41f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/Background2.prefab using Guid(b79bb06b38877774f9676af4d52e41f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04001d67dced517a7617d3131cdd602f') in 0.007478 seconds 
+  Import took 0.009955 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/Directional Light.prefab
+  artifactKey: Guid(b495335d998dbd44fb9ff642cf73a7d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/Directional Light.prefab using Guid(b495335d998dbd44fb9ff642cf73a7d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4969a6e34f50c5a884d11ce918883b90') in 0.003667 seconds 
+  Import took 0.005918 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/Hedge 2.prefab
+  artifactKey: Guid(a4dcb682a9658ca478dfbacf96e80964) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/Hedge 2.prefab using Guid(a4dcb682a9658ca478dfbacf96e80964) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35da60a454520de69c19a5320272990f') in 0.009838 seconds 
+  Import took 0.012347 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/Main Camera.prefab
+  artifactKey: Guid(c7a759535dc79c345b838a358e072749) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/Main Camera.prefab using Guid(c7a759535dc79c345b838a358e072749) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '759aeebbdfb60cef9b25498461cd155f') in 0.004477 seconds 
+  Import took 0.006983 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.798683 seconds.
+  path: Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/Potted Plant 2.prefab
+  artifactKey: Guid(dcb7425e726bfd24fab770880e6c691a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/Potted Plant 2.prefab using Guid(dcb7425e726bfd24fab770880e6c691a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7ff52bfb2aafac4525cc9860b5879dc') in 0.012260 seconds 
+  Import took 0.015270 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000276 seconds.
+  path: Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/Potted Plant 3.prefab
+  artifactKey: Guid(d6df19b610a7ca0449844e601b39a6d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/Potted Plant 3.prefab using Guid(d6df19b610a7ca0449844e601b39a6d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b17a245b37babf2f11dc28d730905f94') in 0.011190 seconds 
+  Import took 0.014616 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000275 seconds.
+  path: Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/Potted Plant 4.prefab
+  artifactKey: Guid(44deed2dab496bb4c853e5a63d0ef533) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/Potted Plant 4.prefab using Guid(44deed2dab496bb4c853e5a63d0ef533) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8620966bce02c341d59c44f515d123e') in 0.011701 seconds 
+  Import took 0.015433 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.061620 seconds.
+  path: Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/Potted Plant 5.prefab
+  artifactKey: Guid(35d91982422de864eafebd29f7b4e4f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/Potted Plant 5.prefab using Guid(35d91982422de864eafebd29f7b4e4f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '263cacf475c9d4d42d9d8752fce0526e') in 0.009148 seconds 
+  Import took 0.012943 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000253 seconds.
+  path: Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/Potted Plant 6.prefab
+  artifactKey: Guid(535f7485ff0b12241827da63c536c0e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/Potted Plant 6.prefab using Guid(535f7485ff0b12241827da63c536c0e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d3f2a3003f5c36ac4d9443e309ef30a') in 0.009215 seconds 
+  Import took 0.012328 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000315 seconds.
+  path: Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/Street Tree 1.prefab
+  artifactKey: Guid(74a548f02121cb54eb43cb42314531f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/Street Tree 1.prefab using Guid(74a548f02121cb54eb43cb42314531f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0578c5116ef36e1cd249cf46f98c827c') in 0.010063 seconds 
+  Import took 0.012929 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.281049 seconds.
+  path: Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/Street Tree 2.prefab
+  artifactKey: Guid(82be74164b438774fb36961fa097df49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/Street Tree 2.prefab using Guid(82be74164b438774fb36961fa097df49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18618b42d011b475e4b73c75fc5bbc30') in 0.009838 seconds 
+  Import took 0.013057 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/Street Tree 3.prefab
+  artifactKey: Guid(dd8c145e62469574c8988c6d5ce0db70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/Street Tree 3.prefab using Guid(dd8c145e62469574c8988c6d5ce0db70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '117220c5b75f4a8aa63a65fac3542f4c') in 0.010134 seconds 
+  Import took 0.012935 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/Street Tree 4.prefab
+  artifactKey: Guid(80c1305101746b543802285b180dd283) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/Street Tree 4.prefab using Guid(80c1305101746b543802285b180dd283) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '238bb0562edbd61eeeebd3002aad84c6') in 0.009757 seconds 
+  Import took 0.012375 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.081101 seconds.
+  path: Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/Street Tree 5.prefab
+  artifactKey: Guid(4df9e670bb3c36b4b81387e859e93d4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/Street Tree 5.prefab using Guid(4df9e670bb3c36b4b81387e859e93d4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca6ccd3ac0ae8f10a43f5dde27fed35e') in 0.008747 seconds 
+  Import took 0.011854 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000272 seconds.
+  path: Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/tree 1.prefab
+  artifactKey: Guid(1e4f49afacfb1774db32a9b1f2e72e4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/tree 1.prefab using Guid(1e4f49afacfb1774db32a9b1f2e72e4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ecf2a5250cf827df8810141e4980c2c') in 0.007951 seconds 
+  Import took 0.010486 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000259 seconds.
+  path: Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/Street Tree 6.prefab
+  artifactKey: Guid(ca6eed513414b8b48a37b6c02c2fb480) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/Street Tree 6.prefab using Guid(ca6eed513414b8b48a37b6c02c2fb480) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e95a06d3518f5490bef98a8b1ea1a85') in 0.008204 seconds 
+  Import took 0.010689 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.289780 seconds.
+  path: Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/tree 2.prefab
+  artifactKey: Guid(d9fc690e52a26ad45947b8b0dbc5f2bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/tree 2.prefab using Guid(d9fc690e52a26ad45947b8b0dbc5f2bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30980321238947cf4ee05a78ddb597c6') in 0.008537 seconds 
+  Import took 0.013341 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000270 seconds.
+  path: Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/tree 4.prefab
+  artifactKey: Guid(c040ab9b6f143dc419e9278a27bcad9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/tree 4.prefab using Guid(c040ab9b6f143dc419e9278a27bcad9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1756f05cfc3f0b89b18fb9c11fb7339') in 0.008755 seconds 
+  Import took 0.011425 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/tree 3.prefab
+  artifactKey: Guid(f2727472b344747408ea8dfb42ce1873) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/tree 3.prefab using Guid(f2727472b344747408ea8dfb42ce1873) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0cc1a6851b8f79a5a61762cfc5b1088') in 0.008273 seconds 
+  Import took 0.010852 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.421972 seconds.
+  path: Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/tree 5.prefab
+  artifactKey: Guid(f5df276ca8db56049849b11899004d48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/tree 5.prefab using Guid(f5df276ca8db56049849b11899004d48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '274fad3e8314e1aae76275b2bb420614') in 0.017462 seconds 
+  Import took 0.021160 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000254 seconds.
+  path: Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/tree 6.prefab
+  artifactKey: Guid(c00575bbb9efcd740b13a035ce795a13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/tree 6.prefab using Guid(c00575bbb9efcd740b13a035ce795a13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc2ce5a38a5f1bd85204c4875d288738') in 0.010333 seconds 
+  Import took 0.013523 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/tree 7.prefab
+  artifactKey: Guid(787481964fc05da4684124e8aaa924ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/tree 7.prefab using Guid(787481964fc05da4684124e8aaa924ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06ac79acab0dba5a63540489214072c8') in 0.019132 seconds 
+  Import took 0.024101 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001223 seconds.
+  path: Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/tree 8.prefab
+  artifactKey: Guid(9cca81d8171e7e0459d94f8251680bfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/tree 8.prefab using Guid(9cca81d8171e7e0459d94f8251680bfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a07743805be0c3cc53a18120caabdd6f') in 0.011366 seconds 
+  Import took 0.014741 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000350 seconds.
+  path: Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/tree 9.prefab
+  artifactKey: Guid(6956dbfb44d2389469a0a8d9b83f3bc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/tree 9.prefab using Guid(6956dbfb44d2389469a0a8d9b83f3bc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b8e40b94c89bb605b465f06de7fed80') in 0.010908 seconds 
+  Import took 0.014106 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/tree 10.prefab
+  artifactKey: Guid(221b274084495684db9bc9c630eb7155) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/tree 10.prefab using Guid(221b274084495684db9bc9c630eb7155) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff03c4c82241b82b17887f511efcfe92') in 0.008584 seconds 
+  Import took 0.011172 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/tree 9.prefab
+  artifactKey: Guid(6956dbfb44d2389469a0a8d9b83f3bc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/tree 9.prefab using Guid(6956dbfb44d2389469a0a8d9b83f3bc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b8e40b94c89bb605b465f06de7fed80') in 0.012470 seconds 
+  Import took 0.015073 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.256261 seconds.
+  path: Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/tree 11.prefab
+  artifactKey: Guid(0f436f11e5f6a4746ad0ef93dc760583) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/tree 11.prefab using Guid(0f436f11e5f6a4746ad0ef93dc760583) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2715c219763f64410070ea1fa9d41a95') in 0.009194 seconds 
+  Import took 0.012500 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000250 seconds.
+  path: Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/tree 12.prefab
+  artifactKey: Guid(60276e840f2409647a7d366606f55005) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/tree 12.prefab using Guid(60276e840f2409647a7d366606f55005) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c59fc0117d39124633adac3a64999c9') in 0.009515 seconds 
+  Import took 0.012146 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000235 seconds.
+  path: Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/tree 13.prefab
+  artifactKey: Guid(cb2174d77e42ed74d8794609d80e4bbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/tree 13.prefab using Guid(cb2174d77e42ed74d8794609d80e4bbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a407d34783f4e21cf2e7a21822fd520') in 0.010388 seconds 
+  Import took 0.012970 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/tree 16.prefab
+  artifactKey: Guid(fda1b03ba40107b42aa57c49305b41f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/tree 16.prefab using Guid(fda1b03ba40107b42aa57c49305b41f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e557fb07e605406b6920322a24a7780c') in 0.008995 seconds 
+  Import took 0.011968 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000341 seconds.
+  path: Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/tree 14.prefab
+  artifactKey: Guid(4901a59201491854c8893f398c2d0c48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/tree 14.prefab using Guid(4901a59201491854c8893f398c2d0c48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2339920ab53a3ffb25b8dcd32b4be3fb') in 0.007758 seconds 
+  Import took 0.010486 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/Tree Trunk 1.prefab
+  artifactKey: Guid(6003346dae61b9c4da33e7f1e6b46882) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/Tree Trunk 1.prefab using Guid(6003346dae61b9c4da33e7f1e6b46882) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e76c3f6c1275a825e039435aab2152d') in 0.012219 seconds 
+  Import took 0.015519 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000367 seconds.
+  path: Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/Tree Trunk 2.prefab
+  artifactKey: Guid(5e71f9539db1ae246a25939dafb13650) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/Tree Trunk 2.prefab using Guid(5e71f9539db1ae246a25939dafb13650) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bca70da6e2d6b67909e4e9304c030d27') in 0.009036 seconds 
+  Import took 0.011777 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/tree 11.prefab
+  artifactKey: Guid(0f436f11e5f6a4746ad0ef93dc760583) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/tree 11.prefab using Guid(0f436f11e5f6a4746ad0ef93dc760583) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2715c219763f64410070ea1fa9d41a95') in 0.006927 seconds 
+  Import took 0.009411 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000292 seconds.
+  path: Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/tree 15.prefab
+  artifactKey: Guid(0f407013ac6a8bc428a76e55593acf91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Downtown Game Studio/Nature Pack - Low Polly Trees & Bushes/Prefabs/tree 15.prefab using Guid(0f407013ac6a8bc428a76e55593acf91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '762e8a2301335d5d086403a0a660f23f') in 0.008271 seconds 
+  Import took 0.011106 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004729 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.54 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-03-08 00:23:02.352 Unity[67441:1726338] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600001298230 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Mono: successfully reloaded assembly
+- Completed reload, in  3.139 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3141ms)
+		BeginReloadAssembly (361ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (44ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (3ms)
+			CreateAndSetChildDomain (150ms)
+		EndReloadAssembly (2678ms)
+			LoadAssemblies (279ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (379ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (51ms)
+			SetupLoadedEditorAssemblies (1657ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (13ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (258ms)
+				ProcessInitializeOnLoadAttributes (1362ms)
+				ProcessInitializeOnLoadMethodAttributes (20ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (39ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2203 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 248.5 MB.
+System memory in use after: 248.7 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2864.
+Total: 3.622000 ms (FindLiveObjects: 0.312875 ms CreateObjectMapping: 0.112500 ms MarkObjects: 3.075625 ms  DeleteObjects: 0.119125 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004888 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.56 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-03-08 00:25:07.398 Unity[67441:1726338] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x6000012bc850 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Mono: successfully reloaded assembly
+- Completed reload, in  3.456 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3458ms)
+		BeginReloadAssembly (343ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (44ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (122ms)
+		EndReloadAssembly (3013ms)
+			LoadAssemblies (586ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (383ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (49ms)
+			SetupLoadedEditorAssemblies (1643ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (19ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (315ms)
+				ProcessInitializeOnLoadAttributes (1286ms)
+				ProcessInitializeOnLoadMethodAttributes (20ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (39ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.59 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2203 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 248.7 MB.
+System memory in use after: 248.9 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2866.
+Total: 3.424542 ms (FindLiveObjects: 0.224083 ms CreateObjectMapping: 0.100833 ms MarkObjects: 3.022667 ms  DeleteObjects: 0.076125 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004882 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.64 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-03-08 00:28:25.847 Unity[67441:1726338] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600001203e20 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Mono: successfully reloaded assembly
+- Completed reload, in  3.356 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3360ms)
+		BeginReloadAssembly (412ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (46ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (1ms)
+			CreateAndSetChildDomain (130ms)
+		EndReloadAssembly (2837ms)
+			LoadAssemblies (304ms)
+			RebuildTransferFunctionScriptingTraits (1ms)
+			SetupTypeCache (460ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (53ms)
+			SetupLoadedEditorAssemblies (1699ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (18ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (324ms)
+				ProcessInitializeOnLoadAttributes (1333ms)
+				ProcessInitializeOnLoadMethodAttributes (19ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (2ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (40ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.43 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2203 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 248.9 MB.
+System memory in use after: 249.1 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2868.
+Total: 5.044667 ms (FindLiveObjects: 0.182666 ms CreateObjectMapping: 0.044417 ms MarkObjects: 4.569750 ms  DeleteObjects: 0.246958 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

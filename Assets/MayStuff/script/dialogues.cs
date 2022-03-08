@@ -14,6 +14,7 @@ public class dialogues : MonoBehaviour
     [SerializeField] Image textboxSprite;
     private bool haveTriggered = false;
     private bool triggered = false;
+    private bool first = false;
     public bool dialogueComplete = false;
     [SerializeField] GameObject player;
     [SerializeField] GameObject wall;
@@ -73,7 +74,7 @@ public class dialogues : MonoBehaviour
         haveTriggered = false;
         GetComponent<interactBehavior>().triggered = false;
         //dialogue2Complete = true;
-
+        first = false;
         triggered = false;
 
 
