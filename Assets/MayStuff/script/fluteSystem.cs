@@ -9,9 +9,9 @@ public class fluteSystem : MonoBehaviour
     float maxVolume;
     float attackTime;
     float releaseTime;
-
+    
     [SerializeField] KeyCode keyToPlay;
-
+    [SerializeField] fluteTrigger fluteTrigger;
 
     public enum ASRState { inactive = 0, attack, sustain, release }
     public ASRState asrState;
@@ -30,62 +30,65 @@ public class fluteSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         maxVolume = fluteControl.FmaxVolume;
         attackTime = fluteControl.FmaxVolume;
         releaseTime = fluteControl.FreleaseTime;
-
-        //if we press down keys for the length of attack time, we reach max volume
-        if (Input.GetKey(keyToPlay))
+        if (fluteTrigger.playflute)
         {
-            //Debug.Log ("")
-            switch (asrState)
+            //if we press down keys for the length of attack time, we reach max volume
+            if (Input.GetKey(keyToPlay))
             {
-                case ASRState.inactive:
-                    asrState = ASRState.attack;
-                    break;
-                case ASRState.attack:
-                    if (audioSource.volume < maxVolume)
-                    {
-                        audioSource.volume += (Time.deltaTime / attackTime) * maxVolume;
-                    }
+                //Debug.Log ("")
+                switch (asrState)
+                {
+                    case ASRState.inactive:
+                        asrState = ASRState.attack;
+                        break;
+                    case ASRState.attack:
+                        if (audioSource.volume < maxVolume)
+                        {
+                            audioSource.volume += (Time.deltaTime / attackTime) * maxVolume;
+                        }
 
-                    else if (audioSource.volume >= maxVolume)
-                    {
-                        audioSource.volume = maxVolume;
-                        asrState = ASRState.sustain;
-                    }
-                    break;
-                case ASRState.sustain:
-                    break;
-                case ASRState.release:
-                    asrState = ASRState.attack;
-                    break;
+                        else if (audioSource.volume >= maxVolume)
+                        {
+                            audioSource.volume = maxVolume;
+                            asrState = ASRState.sustain;
+                        }
+                        break;
+                    case ASRState.sustain:
+                        break;
+                    case ASRState.release:
+                        asrState = ASRState.attack;
+                        break;
+                }
             }
-        }
 
-        else
-        {
-            switch (asrState)
+            else
             {
-                case ASRState.inactive:
-                    break;
-                case ASRState.attack:
-                    asrState = ASRState.release;
-                    break;
-                case ASRState.sustain:
-                    asrState = ASRState.release;
-                    break;
-                case ASRState.release:
-                    if (audioSource.volume > 0f)
-                    {
-                        audioSource.volume -= (Time.deltaTime / releaseTime) * maxVolume;
-                    }
-                    else
-                    {
-                        audioSource.volume = 0f;
-                        asrState = ASRState.inactive;
-                    }
-                    break;
+                switch (asrState)
+                {
+                    case ASRState.inactive:
+                        break;
+                    case ASRState.attack:
+                        asrState = ASRState.release;
+                        break;
+                    case ASRState.sustain:
+                        asrState = ASRState.release;
+                        break;
+                    case ASRState.release:
+                        if (audioSource.volume > 0f)
+                        {
+                            audioSource.volume -= (Time.deltaTime / releaseTime) * maxVolume;
+                        }
+                        else
+                        {
+                            audioSource.volume = 0f;
+                            asrState = ASRState.inactive;
+                        }
+                        break;
+                }
             }
         }
 

@@ -4,20 +4,20 @@ using UnityEngine;
 using UnityEngine.Audio;
 public class fluteControl : MonoBehaviour
 {
-    [SerializeField] AudioMixerSnapshot normal;
+    //using audio mixer to change the sound the flute plays according to the color of the snowman musican
+    [SerializeField] AudioMixerSnapshot normal;     //different snapshot that has different stats
     [SerializeField] AudioMixerSnapshot reverb;
     [SerializeField] AudioMixerSnapshot sad;
     [SerializeField] AudioMixerSnapshot happy;
     //[SerializeField] TMP_Text mytext;
-
-    public GameObject FlutePlayer;
+    [SerializeField] Renderer snowmanR;     //to get snowman color from its renderer
+    //public GameObject FlutePlayer;
     //public GameObject player;
 
-    public float normalMaxVol = 1;
-    public float normalAttackTime = 1;
-    public float normalReleaseTime = 1;
+     float normalMaxVol = 1;        //set normal to 1
+     float normalAttackTime = 1;
 
-    public float FmaxVolume = 1;
+    public float FmaxVolume = 1;    //valume accessable to flute manager
     public float FattackTime = 1;
     public float FreleaseTime = 1;
 
@@ -31,7 +31,7 @@ public class fluteControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Alpha1))
+        if (snowmanR.material.color == Color.white)
         {
             normal.TransitionTo(0);
             Debug.Log("normal");
@@ -40,7 +40,7 @@ public class fluteControl : MonoBehaviour
             FreleaseTime = 0.5f;
 
         }
-        if (Input.GetKey(KeyCode.Alpha2))
+        if (snowmanR.material.color == Color.yellow)
         {
             reverb.TransitionTo(0);
             Debug.Log("reverb");
@@ -49,7 +49,7 @@ public class fluteControl : MonoBehaviour
             FreleaseTime = 4F;
 
         }
-        if (Input.GetKey(KeyCode.Alpha3))
+        if (snowmanR.material.color == Color.green)
         {
             sad.TransitionTo(0);
             Debug.Log("sad");
@@ -58,7 +58,7 @@ public class fluteControl : MonoBehaviour
             FreleaseTime = 2F;
 
         }
-        if (Input.GetKey(KeyCode.Alpha4))
+        if (snowmanR.material.color == Color.red)
         {
             happy.TransitionTo(0);
             Debug.Log("happy");
@@ -68,7 +68,7 @@ public class fluteControl : MonoBehaviour
 
         }
 
-        if (Input.GetKey(KeyCode.Alpha6))
+        if (snowmanR.material.color == Color.magenta)
         {
             normal.TransitionTo(0);
             Debug.Log("tired");

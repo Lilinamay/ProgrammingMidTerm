@@ -11,27 +11,6 @@ public class ColorManager : MonoBehaviour
     [SerializeField] Image ColorImage;
     public Color pColor;
 
-    //public static GameManager Instance
-
-
-    //{
-    //    get
-    //    {
-    //        // If the static instance isn't set yet, throw an error
-    //        if (staticInstance is null)
-    //        {
-    //            Debug.LogError("Game Manager is NULL");
-    //        }
-
-    //        return staticInstance;
-    //    }
-    //}
-
-    //private void Awake()
-    //{
-    //    // Set the static instance to this instance
-    //    staticInstance = this;
-    //}
     void Start()
     {
         playerColor = snowColor.white;
